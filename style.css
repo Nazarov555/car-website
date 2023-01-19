@@ -102,11 +102,16 @@ table tr th {
 table tr td {
     padding-left: 1rem;
 }
+table .bold td p {
+    font-weight: bold;
+}
 
 .car-wrapper {
     display: flex;
     gap: 5rem;
     padding-top: 7rem;
+    justify-content: center;
+    align-items: center;
 }
 .form-left {
     display: flex;
@@ -125,10 +130,10 @@ table tr td {
 .form-left input::placeholder {
     font-size: 1.2rem;
 }
-
-table .bold td p {
-    font-weight: bold;
+.rolls-right img {
+    width: 50rem;
 }
+
 
 .button {
     display: inline-block;
