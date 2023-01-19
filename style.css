@@ -108,6 +108,7 @@ table .bold td p {
 
 .car-wrapper {
     display: flex;
+    flex-direction: row;
     gap: 5rem;
     padding-top: 7rem;
     justify-content: center;
@@ -169,7 +170,7 @@ footer {
 }
 
 
-@media (max-width: 1600px) {
+@media (max-width: 1500px) {
     .home_section {
         grid-template-columns: repeat(1, auto);
     }
