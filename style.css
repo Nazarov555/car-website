@@ -170,7 +170,7 @@ footer {
 }
 
 
-@media (max-width: 1500px) {
+@media (max-width: 1600px) {
     .home_section {
         grid-template-columns: repeat(1, auto);
     }
