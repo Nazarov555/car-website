@@ -80,7 +80,6 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(100px, auto));
     
 }
-
 .car-box {
     display: inline-block;
     width: 23rem;
@@ -153,7 +152,6 @@ table .bold td p {
     background-color: lightgray;
     color: black;
 }
-
 .home_button_up {
     animation: 2s linear infinite buttonsAnimation;
 }
@@ -190,9 +188,7 @@ footer {
 
 @media (max-width: 1600px) {
 
-    .home_section {
-        flex-direction: column;
-    }
+    
     .image-right {
         padding-top: 5rem;
         margin: auto;
@@ -217,7 +213,29 @@ footer {
         margin: auto;
     }
 }
+@media (max-width: 1500px) {
+    .home_section {
+        flex-direction: column;
+    }
+}
+@media (max-width: 1450px) {
+    .car-wrapper {
+        flex-direction: column;
+    }
 
+    .car-box {
+        width: 20rem;
+        margin-left: 2.6rem;
+    }
+
+    .car-box h1 {
+        padding-left: 4rem;
+    }
+
+    .rolls-right img {
+        width: 30rem;
+    }
+}
 @media (max-width: 1175px) {
     nav {
         position: absolute;
@@ -249,23 +267,7 @@ footer {
     header .logo {
         margin-left: 2rem;
     }
-    .car-wrapper {
-        flex-direction: column;
-    }
-
-    .car-box {
-        width: 20rem;
-        margin-left: 2.6rem;
-    }
-
-    .car-box h1 {
-        padding-left: 4rem;
-    }
-
-    .rolls-right img {
-        width: 30rem;
-    }
-
+   
     .menu-btn {
         display: inline-block;
         position: absolute;
