@@ -56,9 +56,10 @@ section {
 }
 
 .home_section {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
+    display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 5rem;
 }
 .text-box-left h1 {
     font-weight: 700;
@@ -153,7 +154,10 @@ table .bold td p {
     color: black;
 }
 
-.home_button {
+.home_button_up {
+    animation: 2s linear infinite buttonsAnimation;
+}
+.form_button_bottom {
     animation: 2s linear infinite buttonsAnimation;
 }
 
@@ -185,8 +189,9 @@ footer {
 
 
 @media (max-width: 1600px) {
+
     .home_section {
-        grid-template-columns: repeat(1, auto);
+        flex-direction: column;
     }
     .image-right {
         padding-top: 5rem;
@@ -348,7 +353,7 @@ footer {
     .text-box-left h1 {
         font-size: 2rem;
     }
-    .home_button {
-        margin-left: 2rem;
+    .home_button_up {
+        margin-left: 3rem;
     }
 }
