@@ -27,6 +27,7 @@ header {
     top: 0;
     width: 100vw;
     background-color: lightgray;
+    z-index: 999;
 }
 header nav ul {
     display: flex;
@@ -151,6 +152,19 @@ table .bold td p {
     background-color: lightgray;
     color: black;
 }
+
+.home_button {
+    animation: 2s linear infinite buttonsAnimation;
+}
+
+@keyframes buttonsAnimation {
+    0% {
+        transform: scale(1,1);
+    }
+    100% {
+        transform :scale(1.1,1.1);
+    }
+}
 .close-btn {
     display: none;
     cursor: pointer;
@@ -186,7 +200,7 @@ footer {
         padding: 8rem 8rem;
     }
     .car-wrapper {
-        flex-direction: column;
+        flex-direction: row;
     }
     .form-left {
         margin: auto;
@@ -194,7 +208,7 @@ footer {
     .form-left input {
         width: 24.6rem;
     }
-    .rolls-right {
+    .rolls-right img{
         margin: auto;
     }
 }
@@ -229,6 +243,9 @@ footer {
    
     header .logo {
         margin-left: 2rem;
+    }
+    .car-wrapper {
+        flex-direction: column;
     }
 
     .car-box {
@@ -330,5 +347,8 @@ footer {
     }
     .text-box-left h1 {
         font-size: 2rem;
+    }
+    .home_button {
+        margin-left: 2rem;
     }
 }
